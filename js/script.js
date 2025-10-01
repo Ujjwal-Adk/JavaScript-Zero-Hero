@@ -42,5 +42,12 @@ mainHeading.textContent = "Welcome to my Interactive Portfolio"
 let heroHeading = document.querySelector(".hero h2")
 heroHeading.textContent = "This Website is powered by JavaScript"
 
+// Working with the copyright year 
+
+let upadateDate = new Date().getFullYear();
+
+let copyRightText = document.querySelector("#copyright")
+copyRightText.textContent = "© " + upadateDate + " Ujjwal. All rights reserved."
+
 
 
