@@ -49,5 +49,39 @@ let upadateDate = new Date().getFullYear();
 let copyRightText = document.querySelector("#copyright")
 copyRightText.textContent = "© " + upadateDate + " Ujjwal. All rights reserved."
 
+// new Date().getFullYear
+// new Date(year , month , day)
 
+//  DAY 2 
 
+// In this chapter we will learn about the functions 
+
+// Making the function first using the const term so that it remains constant and the name of variables where the whole function is stored and the directly using the keyword i.e functions, There are another ways to make the function too we will learn about that later like arrow function 
+const greetUser = function() {
+    console.log("Hey everyone, Welcome to my Portfolio ! ")
+    console.log("Thanks for visiting")
+}
+// Calling the Function / making the function is not enough we need to call them too 
+greetUser();
+
+// We can now call the function that print this message as much time we like just using one sentence 
+
+greetUser();
+greetUser();
+
+// Now we will learn to use the parameters with the functions 
+// With one parameter 
+
+const greetByName = function(name) {
+    console.log("This user name is " +name);
+}
+let $userName = prompt("Enter your name to continue please : ") // Taking inputs through the user for the parameter 
+greetByName($userName);
+
+// Now lets try using the diferent parameters 
+const introduction = function(fullName , age , hobby){
+    console.log("Hi , This is "+fullName);
+    console.log("I am "+age+" years old. My hobby is "+hobby);
+}
+
+introduction("Tejveer" , 19 , "reading books" )
