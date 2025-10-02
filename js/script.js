@@ -85,3 +85,29 @@ const introduction = function(fullName , age , hobby){
 }
 
 introduction("Tejveer" , 19 , "reading books" )
+
+// Functions that returns values 
+
+const sum = function(number_1 , number_2){
+    result = number_1+ number_2;
+    return result // This function will return result which is the sum of number 1 and number 2 
+}
+
+// EVENTS 
+const contactLink = document.querySelector(".navbar ul li:nth-child(4) a");
+
+const contactSection = document.querySelector("#contact");
+
+// Now creating function where event is assigned 
+
+const scrollBehave = function(event) {
+    event.preventDefault()
+    //This below line is to execute the designated page 
+    contactSection.scrollIntoView({behavior : 'smooth'});
+}
+
+// Calling the function with event listener 
+// Whenevr any kind of activity happens(event) function is activated 
+contactLink.addEventListener("click" , scrollBehave)
+
+
